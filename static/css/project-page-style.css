@@ -1,0 +1,50 @@
+.project-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.service-wraper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.service-items {
+	display: flex;
+	flex-direction: row;
+	margin-left: 20px;
+}
+
+.item-service {
+	margin: 0px 10px;
+	font-weight: 550;
+	color: #757575;
+}
+
+.project-page h4 {
+	font-weight: 600;
+	font-size: 1.4em;
+	color: #757575;
+	margin-bottom: 10px;
+}
+
+.project-page p {
+	text-align: center;
+}
+
+.project-page h2 {
+	margin: 40px 0px;
+	font-size: 3.5em;
+}
+
+.project-page h3 {
+	font-size: 1.4em;
+	font-weight: 500;
+}
+
+.project-page a {
+	text-decoration: none;
+	color: black;
+}

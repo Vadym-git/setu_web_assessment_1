@@ -1,0 +1,21 @@
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.menu-items-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+}
+
+.menu-items-container a {
+	font-size: 0.3em;
+	text-decoration: none;
+	color: black;
+}
+
+.menu-items-container div {
+	margin: 0px 10px;
+}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main_content %}
+<article class="project-page">
+						<h4>July 2021</h4>
+						<h2>{{ title }}</h2>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Numquam accusamus cumque nisi eaque quam consectetur hic enim necessitatibus eum, quis quas? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta necessitatibus tempora, excepturi quaerat omnis suscipit eius voluptatibus minima explicabo beatae iste totam, dignissimos officiis a incidunt est corporis nihil at illo qui impedit!</p>
+						<h3><a href="{{ link }}" target="_blank">Official link >></a></h3>
+						<div>
+							<img src="{% static img %}">
+						</div>
+						<div class="service-wraper">
+							<div>Services:</div>
+							<div class="service-items">
+								<div class="item-service">UI/UX Design</div>
+								<div class="item-service">Product Design</div>
+								<div class="item-service">Design Thinking</div>
+							</div>
+						</div>
+						<h2>About the project</h2>
+						<p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Earum sunt officia quas, ut repellendus facilis, assumenda nam saepe, numquam adipisci impedit quae sit, modi accusantium eveniet quis iste quo maiores eos quaerat temporibus molestias!</p>
+				</article>
+{% endblock %}

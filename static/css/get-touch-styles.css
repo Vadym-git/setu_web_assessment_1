@@ -1,0 +1,9 @@
+.get-touch-effects{
+	text-align: center;
+	margin: 120px 0px;
+}
+
+.get-touch-effects:hover {
+  font-size: 1.1em; /* Increase font size on hover */
+  transition: font-size 0.2s ease-in-out; /* Add transition effect */
+}

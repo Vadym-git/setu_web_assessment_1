@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main_content %}
+<article class="self-presentation">
+    <h1 class="my-card_title">Vadym Melnychenko</h1>
+    <div class="my-card_s_description">A software<br>developer from<br>Dublin</div>
+    <p class="my-card-long-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, commodi iure! Neque
+        adipisci placeat ratione deleniti quasi quod sint, in!</p>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+        <div class="black-button">
+            <a href="{% url 'contact_us' %}">Contact me ></a>
+        </div>
+        <a href="#portfolio" class="scroll-down">
+            <div>Scroll Down</div>
+            <div class="circle-button"></div>
+        </a>
+    </div>
+</article>
+<hr>
+<!-- Projects -->
+<artcle class="portfolio-wraper">
+    <a name="portfolio" style="margin: 0px;"></a>
+    <h1>Portfolio</h1>
+    <div class="project-card-wraper">
+        <div class="project-card">
+            <a href="{% url 'project' 0 %}">
+                <img class="project-picture" src="{% static 'img/simple_coin_info.png' %}">
+            </a>
+            <div>
+                <h2><a href="{% url 'project' 0 %}">Crypto Coin</a></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia exercitationem quos qui sint obcaecati
+                    a aut libero. Placeat, numquam maxime eligendi repudiandae ipsa, minima blanditiis culpa tempora a
+                    rem magnam eveniet, nulla! Totam, cumque quaerat.</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="project-card-wraper">
+        <div class="project-card">
+            <a href="{% url 'project' 1 %}">
+                <img class="project-picture" src="{% static 'img/mvo.png' %}">
+            </a>
+            <div>
+                <h2><a href="{% url 'project' 1 %}">MVO Website</a></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia exercitationem quos qui sint obcaecati
+                    a aut libero. Placeat, numquam maxime eligendi repudiandae ipsa, minima blanditiis culpa tempora a
+                    rem magnam eveniet, nulla! Totam, cumque quaerat.</p>
+            </div>
+        </div>
+    </div>
+</artcle>
+<div class="black-button" style="background-color: silver; margin-bottom: 60px;">
+    <a href="#">Browse all projects</a>
+</div>
+<hr>
+<article class="get-touch-effects">
+    <h1>GET IN TOUCH TO WORK TOGETHER</h1>
+    <div class="black-button" style="margin: 0px 350px">
+        <a href="{% url 'contact_us' %}">send me a message</a>
+    </div>
+</article>
+<hr>
+<article class="video-container">
+    <iframe width="100%" class="video" src="https://www.youtube.com/embed/LfaMVlDaQ24"
+            title="Harvard CS50 (2023) – Full Computer Science University Course" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+</article>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+#my-pic-container{
+	background-image: url("../img/me_h.jpg");
+	background-size: 100%;
+	background-position: 500px -150px;
+	background-repeat: no-repeat;
+}
+
+#emphty{
+	margin-top: 350px;
+}

@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+	<link rel="stylesheet" href="{% static 'css/portfolio_styles.css' %}">
+	<link rel="stylesheet" href="{% static 'css/get-touch-styles.css' %}">
+	<link rel="stylesheet" href="{% static 'css/footer-styles.css' %}">
+	<link rel="stylesheet" href="{% static 'css/menu-styles.css' %}">
+	<link rel="stylesheet" href="{% static 'css/contact-us-form-style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/project-page-style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/about-my-styles.css' %}">
+	<title>My Website</title>
+</head>
+<body>
+	<div class="music-button">
+		<audio controls>
+			<source src="https://cdn.pixabay.com/audio/2024/02/14/audio_b9bc3934cc.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		<div class="wrapper">
+			<!-- Header section start -->
+			<header>
+				<div>
+					<span><a href="{% url 'index' %}">MVO</a></span>
+				</div>
+				<div class="menu-items-container">
+					<div><a href="{% url 'index' %}#portfolio">Portfolio</a></div>
+					<div><a href="{% url 'contact_us' %}">Contact me</a></div>
+					<div><a href="#footer">Links</a></div>
+					<div><a href="{% url 'about_me' %}">About me</a></div>
+				</div>
+			</header>
+			<hr>
+			<!-- Header section end -->
+			<!-- Content section start -->
+			<section class="content">
+			{% block main_content %} {% endblock %}
+			</section>
+			<!-- Content section end -->
+			<!-- Footer section start -->
+			<footer class="footer-wraper">
+				<a name="footer" style="margin: 0px;"></a>
+				<div class="menu-block">
+					<h3>Menu</h3>
+					<div class="footer-menu-items">
+						<a href="">Home</a>
+						<a href="">About</a>
+						<a href="">Contact</a>
+						<a href="">Portfolio</a>
+						<a href="">Single Project</a>
+					</div>
+				</div>
+				<div class="menu-block">
+					<h3>Links</h3>
+					<div class="footer-menu-items">
+						<a href="">Facebook</a>
+						<a href="">Instagram</a>
+						<a href="">Telegram</a>
+						<a href="">Lingedln</a>
+						<a href="">Twitter(X)</a>
+					</div>
+				</div>
+			</footer>
+			<!-- Footer section end -->
+		</div>
+	</body>
+	</html>

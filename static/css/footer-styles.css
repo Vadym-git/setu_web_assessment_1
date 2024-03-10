@@ -1,0 +1,24 @@
+.footer-wraper{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin: 0px 0px 30px 0px;
+}
+
+.footer-menu-items{
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-menu-items a {
+	color: black;
+	text-decoration: none;
+}
+
+.footer-menu-items a::after{
+	content: " >";
+}
+
+.menu-block{
+	margin: 0px 20px;
+}
